@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section className="contact">
       <h1 className="Title"> Contact Me </h1>
-      <form action="">
+      <form  method="post" action="https://script.google.com/macros/s/AKfycbxVtZoiLNLlcDrzv4nbWfJ57TAniCXPEbEzBxCXGJjBSBpMm0WwjJTdlLGaSibGOxyQ/exec" >
         <div className="form">
           <label htmlFor="name" hidden>
             Name
