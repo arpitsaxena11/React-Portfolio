@@ -46,7 +46,7 @@ function Home() {
           <p className='desc' >
             Computer Engineering graduate with a solid foundation in programming, software development, and problem-solving. Motivated to contribute to impactful projects and grow in a dynamic tech-driven environment.
           </p>
-          <a id='button' href="https://drive.google.com/file/d/198kdGsrZprPblGj3nVKF6vqJlk2bwEeP/view?usp=sharing" target="_blank">
+          <a id='button' href="https://drive.google.com/file/d/1sudxCVFdD-pCXIimCWlUpyewOroW3xJG/view?usp=sharing" target="_blank">
           <button className="Resume">Resume</button>
           </a>
         </div>
