@@ -1,0 +1,88 @@
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#242323;
+    --text-black-700:#504e70;
+    --btn-color: #0987f2;
+}
+[data-theme='dark'] {
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+    --btn-color: #bc2929;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--bg-black-900);
+  display: flex;
+  justify-content: center;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}
+
+h1,h2,h3,p{
+  color: var(--text-black-900);
+  margin: -5px;
+}
+
+h2,h3,p{
+  font-family: "Raleway", sans-serif;
+}
+
+h1,h2{
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 1rem;
+}
+
+h1{
+   padding-top: 150px;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.5rem;
+}
+
+p{
+  padding-top: 15px;
+  font-size: 1rem;
+}
+
+.hover{
+  cursor: pointer;
+}
+
+@media (width>=800px){
+  #root{
+    gap: 100px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h2,h3{
+    font-size: 24px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+
+@media (width>=1400px){
+  #root{
+    gap: 200px;
+  }
+  
+  h1{
+    font-size: 48px;
+  }
+
+}

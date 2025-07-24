@@ -1,0 +1,133 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    margin-top: 80px;
+    max-height: 500px;
+    
+    .profile{
+        max-width: 300px;
+    }
+     .profile:hover{
+           transform: scale(1.05);
+        }
+
+    span{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    }
+
+    a{
+        margin: 0;
+
+        img{
+            width: 2rem;
+        }
+        img:hover{
+           transform: scale(1.1);
+        }
+    }
+
+    a{
+        width: fit-content;
+        align-self: center;
+    }
+    #button{
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+
+    button{
+        background-color: var(--btn-color);
+        color: var(--text-black-900);
+        border: none;
+        border-radius: 10px;
+        width: 120px;
+        height: 45px;
+        font-size: 18px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    }
+
+    button:hover{
+        transform: scale(1.1);
+         background-color: var(--text-black-900);
+        color: var(--btn-color);
+        cursor: pointer;
+    }
+
+    button:active{
+        transform: translateY(2px);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+
+.div{
+   position: relative;
+}
+
+.themeIcon{
+     position: absolute;
+     margin-left: 1rem;
+     width: 2rem;
+}
+
+.themeIcon:hover{
+    cursor: pointer;
+    
+}
+
+.desc{
+    max-width: 50ch;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 800px){
+    .Container{
+        margin-bottom: 250px;
+        margin-top: 150px;
+    }
+
+    
+}
+
+@media(max-width: 700px){
+    .profile{
+            width: 200px;
+        }
+    h1{
+        padding-top: 0px;
+    }    
+}
+
+@media (width>=800px){
+    .Container{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .profile{
+            width: 250px;
+        }
+
+    }
+}
+
+@media (width>=1400px){
+    .Container{
+        .profile{
+            width: 400px;
+        }
+
+    }
+}
